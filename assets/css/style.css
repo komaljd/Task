@@ -1,0 +1,118 @@
+/*==========================begin:font===========================*/
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/OpenSans-Semibold.eot');
+    src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Semibold.woff') format('woff'),
+        url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans.eot');
+    src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff'),
+        url('../fonts/OpenSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*==========================end:font===========================*/
+/*==========================begin:body===========================*/
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body,html{margin: 0;padding: 0;height: 100%;line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+a{text-decoration:none;outline:none;letter-spacing: 0.5px;}
+a:link{text-decoration:none;outline:none;}
+a:visited{text-decoration:none;outline:none;color: #fff;}
+a:hover{text-decoration:none;outline:none;}
+a:active{text-decoration:none;outline:none;color: #fff;}
+a:focus{color:#fff;}
+p{line-height:1.4;word-wrap:break-word;word-break:break-word;
+font-family: 'Open Sans Regular'; font-size: 16px;}
+h1,h2,h3,h4,h5,h6,ul,p{margin:0;padding:0;letter-spacing: 0.3px;}
+li{list-style-type: none;}
+
+/*=============beign:custom=================*/
+.t-equalPadding{ padding: 80px 0px }
+.t-paraSection p{ padding: 10px 0px; cursor: default; }
+.t-headingSection h3{  font-family: 'Open Sans Semibold'; color: #191919; font-size: 26px; padding-top: 15px }
+.t-headingSection h1{   font-family: 'Open Sans Bold'; color: #000000; font-size: 32px; padding-top: 15px }
+.t-btnSet .btn{ color: #7fa3d3;  font-family: 'Roboto'; -webkit-transition: .4s ease; -o-transition: .4s ease; transition: .4s ease; }
+.t-btnSet .btn:hover{ color: #7193c1 }
+.t-btnSet .btn > .fas{opacity: 0;  -webkit-transition: .5s ease;  -o-transition: .5s ease;  transition: .5s ease; -webkit-transform: translateX(-3px); -ms-transform: translateX(-3px); transform: translateX(-3px); }
+.t-btnSet .btn:hover > .fas{opacity: .6; -webkit-transform: translateX(4px); -ms-transform: translateX(4px); transform: translateX(4px); color: #124b98 }
+.imgSize img{ width: 100%; }
+/*=============end:custom=================*/
+
+/*=========begin:section 1=================*/
+.custom-container{display: -webkit-box;display: -ms-flexbox;display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+
+.t-boxSectionContainer .custom-container{ width: 70%;  margin: auto; }
+
+.t-boxSectionContainer .t-boxModel{ background-color: #fff; -webkit-box-shadow: 0 0 10px #ddddddb3; box-shadow: 0 0 10px #ddddddb3; padding: 40px 30px 30px 40px;  width: 33.33%;  margin: auto; }
+ 
+.t-boxSectionContainer .t-boxModel:hover{  background-color:rgb(245 244 244 / 76%); -webkit-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease;}
+/*========end:section 1=================*/
+
+/*=========begin:section 2=================*/
+
+.t-aboutSection .col-md-6{  -ms-flex: 0 0 50%; flex: 0 0 50%;  	 max-width: 50%; }
+.t-aboutSection .col-md-4{  -ms-flex: 0 0 26%; flex: 0 0 26%;    max-width: 26%;   margin-left: 70px;   -ms-flex-item-align: center;  -ms-grid-row-align: center;  
+   align-self: center;   }
+
+.t-aboutSection .col-md-6,.t-aboutSection .col-md-4{
+		-webkit-box-flex: 0;
+}
+.t-headingSection h1{line-height: 31px;}
+.t-headingSection h1 span{ font-size: 30px; color: #458df1; }
+.aboutContent p{padding: 40px 0px 60px 0px;}
+
+/*========end:section 2=================*/
+
+/*==============================end:body================================*/
+@media all and (max-width:768px) {
+	.t-equalPadding {padding: 20px 0px;}
+	.t-boxSectionContainer .custom-container { width: 90%;}
+    .t-boxSectionContainer .t-boxModel { margin: 10px 0px; 	}
+	.t-boxSectionContainer .t-boxModel{ width: 100% }
+	.t-aboutSection .col-md-6,	.t-aboutSection .col-md-4{
+		-webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%;  max-width: 100%;
+	}
+	.t-aboutSection .col-md-4{ margin-left: 0}
+	.t-aboutSection .col-md-4 ,.t-aboutSection .col-md-6 { padding-right: 15px; padding-left: 15px; }
+	.aboutContent p {  padding: 30px 0px 30px 0px;}
+}
